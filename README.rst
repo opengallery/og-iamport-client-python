@@ -19,7 +19,7 @@ Python3 사용자를 위한 아임포트 REST API 연동 모듈입니다.
 
 .. code-block:: shell
 
-    pip install git+ssh://git@github.com/opengallery/og-iamport-client-python.git@master
+    pip install git+https://git@github.com/opengallery/og-iamport-client-python.git@master
 
 
 기능
