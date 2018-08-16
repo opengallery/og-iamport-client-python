@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 def test_pay_again(iamport):
     # Without 'customer_uid'
     payload_notEnough = {

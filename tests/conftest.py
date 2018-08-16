@@ -1,11 +1,10 @@
-# -*- coding: utf-8 -*-
 from pytest import fixture
 
 from iamport import Iamport
 
 DEFAULT_TEST_IMP_KEY = 'imp_apikey'
-DEFAULT_TEST_IMP_SECRET = 'ekKoeW8RyKuT0zgaZsUtXXTLQ4AhPFW3ZGseDA6bkA' \
-                          '5lamv9OqDMnxyeB9wqOsuO9W3Mx9YSJ4dTqJ3f'
+DEFAULT_TEST_IMP_SECRET = ('ekKoeW8RyKuT0zgaZsUtXXTLQ4AhPFW3ZGseDA6bkA5lamv9O'
+                           'qDMnxyeB9wqOsuO9W3Mx9YSJ4dTqJ3f')
 
 
 def pytest_addoption(parser):

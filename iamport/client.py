@@ -75,11 +75,6 @@ class Iamport(object):
             raise KeyError('merchant_uid or imp_uid is required')
         return self.find_by_imp_uid(imp_uid)
 
-    def customer_create(self, **kwargs):
-        customer_uid = kwargs.get('customer_uid')
-        url = '{}subscribe/customers/{}'.format(self.imp_url, customer_uid)
-        return self._post(url, kwargs)
-
     def customer_get(self, customer_uid):
         url = '{}subscribe/customers/{}'.format(self.imp_url, customer_uid)
         return self._get(url)

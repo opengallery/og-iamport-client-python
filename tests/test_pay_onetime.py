@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 def test_pay_onetime(iamport):
     # Without 'card_number'
     payload_notEnough = {
