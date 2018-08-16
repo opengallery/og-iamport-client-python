@@ -6,7 +6,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - flake8 . --exclude=./tests
+  - flake8
   - pytest --cov=./
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 34b1d763-62f7-4305-b4db-57c7e95644c7
