@@ -4,10 +4,9 @@ python:
   - "3.5"
   - "3.6"
 install:
-  - pip install codecov
   - pip install -r requirements.txt
 script:
   - flake8 . --exclude=./tests
   - pytest --cov=./
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash) -t 34b1d763-62f7-4305-b4db-57c7e95644c7

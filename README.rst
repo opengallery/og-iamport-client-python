@@ -2,11 +2,11 @@
 I'mport; REST Client
 =====================
 
-.. image:: https://travis-ci.org/james-song/iamport-rest-client-python3.svg?branch=master
-    :target: https://travis-ci.org/james-song/iamport-rest-client-python3
+.. image:: https://travis-ci.org/opengallery/og-iamport-client-python.svg?branch=master
+    :target: https://travis-ci.org/opengallery/og-iamport-client-python
 
-.. image:: https://codecov.io/gh/james-song/iamport-rest-client-python3/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/james-song/iamport-rest-client-python3
+.. image:: https://codecov.io/gh/opengallery/og-iamport-client-python/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/opengallery/og-iamport-client-python
 
 
 Python3 사용자를 위한 아임포트 REST API 연동 모듈입니다.
