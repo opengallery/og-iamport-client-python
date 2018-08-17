@@ -1,17 +1,17 @@
 def test_pay_again(iamport):
     # Without 'customer_uid'
-    payload_notEnough = {
+    payload_not_enough = {
         'merchant_uid': '1234qwer',
         'amount': 5000,
     }
 
     try:
-        iamport.pay_again(**payload_notEnough)
+        iamport.pay_again(**payload_not_enough)
     except KeyError as e:
-        assert "Essential parameter is missing!: customer_uid" in str(e)
+        assert 'Essential parameter is missing!: customer_uid' in str(e)
 
     payload_full = {
-        'customer_uid': '00000000',
+        'customer_uid': '2093h7ufh',
         'merchant_uid': '1234qwer',
         'amount': 5000,
     }

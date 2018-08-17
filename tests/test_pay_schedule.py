@@ -27,7 +27,7 @@ def test_pay_schedule(iamport):
         assert 'customer_uid is required' in str(e)
 
     payload_without_merchant_uid = {
-        'customer_uid': '00000000',
+        'customer_uid': '2093h7ufh',
         'schedules': [
             {
                 # without 'merchant_uid'
@@ -49,7 +49,7 @@ def test_pay_schedule(iamport):
         assert 'Essential parameter is missing!: merchant_uid' in str(e)
 
     payload_full = {
-        'customer_uid': '00000000',
+        'customer_uid': '2093h7ufh',
         'schedules': [
             {
                 'merchant_uid': 'pay_schedule_%s' % str(time.time()),
@@ -69,4 +69,4 @@ def test_pay_schedule(iamport):
         iamport.pay_schedule(**payload_full)
     except iamport.ResponseError as e:
         assert e.code == 1
-        assert u'등록되지 않은 구매자입니다.' in e.message
+        assert u'요청하신 customer_uid(2093h7ufh)에 등록된 고객정보가 없습니다.' in e.message
