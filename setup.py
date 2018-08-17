@@ -11,7 +11,7 @@ def readme():
 
 setup(
     name='og-iamport-client-python',
-    version='0.0.1',
+    version='1.0.0',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
