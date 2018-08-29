@@ -1,7 +1,10 @@
+import time
+
+
 def test_pay_again(iamport):
     # Without 'customer_uid'
     payload_not_enough = {
-        'merchant_uid': '1234qwer',
+        'merchant_uid': 'pay_again_muid_{}'.format(str(time.time())),
         'amount': 5000,
     }
 
@@ -11,8 +14,8 @@ def test_pay_again(iamport):
         assert 'Essential parameter is missing!: customer_uid' in str(e)
 
     payload_full = {
-        'customer_uid': '2093h7ufh',
-        'merchant_uid': '1234qwer',
+        'customer_uid': 'pay_again_cuid_{}'.format(str(time.time())),
+        'merchant_uid': 'pay_again_muid_{}'.format(str(time.time())),
         'amount': 5000,
     }
 
